@@ -8,7 +8,7 @@ workers_dev = false
 [vars]
 # The `access-control-allow-origin` header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
 # Optional, the `access-control-allow-origin` header is omitted if unset, which blocks all cross-origin requests.
-ALLOWED_ORIGINS = ""
+ALLOWED_ORIGINS = "public.lbenicio.dev"
 
 # The `cache-control` header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control.
 # Optional, the `cache-control` header is omitted if unset, which would NOT disable caching: https://developers.cloudflare.com/workers/runtime-apis/cache/#headers
@@ -32,7 +32,7 @@ NOT_FOUND_FILE = "404.html"
 
 # Enable to show a directory listing fallback on paths ending in /
 # If INDEX_FILE is also provided, it will be used instead if the file exists.
-DIRECTORY_LISTING = false
+DIRECTORY_LISTING = true
 
 # The number of items to show per page in directory listings.
 # Listings may also return less if the listing API call reaches a size limit.
